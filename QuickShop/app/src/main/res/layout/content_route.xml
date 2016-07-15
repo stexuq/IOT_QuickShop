@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.qian.quickshop.ui.RouteActivity"
+    tools:showIn="@layout/activity_route"
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Items Locations"
+        android:id="@+id/shoppingListLabel"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#FF1565C0"
+        android:textAlignment="center"
+        android:layout_gravity="center"/>
+
+        <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@android:id/list"
+        android:layout_below="@+id/shoppingListLabel"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/onSaleItemList"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your route is currently empty"
+            android:id="@android:id/empty"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list2"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/onSaleItemList"
+            android:layout_marginTop="0dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="Finish"
+        android:id="@+id/finishButton"
+        android:background="@color/background"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:typeface="sans"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On Sale Items"
+        android:id="@+id/onSaleItemList"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#FF1565C0"
+        android:textAlignment="center"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"/>
+
+
+</RelativeLayout>

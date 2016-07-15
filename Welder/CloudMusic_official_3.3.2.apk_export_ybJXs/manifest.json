@@ -1,0 +1,55 @@
+{
+  "name": "__MSG_extName__",
+  "default_locale": "en",
+  "manifest_version": 2,
+  "version": "0.70",
+  "version_name": "3.3.2",
+  "offline_enabled": true,
+  "app": {
+    "background": {
+      "page": "app_main.html"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+    {"fileSystem": ["write"]},
+    "unlimitedStorage",
+    "notifications",
+    "clipboardRead",
+    {"socket": ["tcp-connect", "tcp-listen", "udp-bind", "udp-send-to", "resolve-host", "resolve-proxy"]},
+    "accessibilityFeatures.read",
+    "https://clients2.google.com/",
+    "clipboardWrite",
+    "alarms",
+    "storage",
+    "overrideEscFullscreen",
+    "fullscreen",
+    "audioCapture",
+    "geolocation"]
+,
+  "requirements": {
+    "3D": {
+      "features": ["webgl"]
+    }
+  },
+  "kiosk_enabled": true,
+  "import": [{"id": "mfaihdlpglflfgpfjcifdjdjcckigekc"}],
+  "file_handlers": {"arc.types": {"types": ["application/ogg", "application/flac", "audio/*", "application/x-ogg", "application/itunes", "application/x-flac"]}},
+  
+  
+  "arc_metadata": {
+    "apkList": [
+      "CloudMusic_official_3.3.2.apk"
+    ],
+    "enableExternalDirectory": false,
+    "formFactor": "phone",
+    "name": "NetEase Music",
+    "orientation": "portrait",
+    "packageName": "com.netease.cloudmusic",
+    "resize": "reconfigure",
+    "useGoogleContactsSyncAdapter": true
+  }
+}

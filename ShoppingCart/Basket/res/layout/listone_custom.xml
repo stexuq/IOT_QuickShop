@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:src="@android:drawable/ic_delete" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/delete"
+        android:text="Kelloggs Corn Flakes Honey and Almond 400gm"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/product_mrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/product_name"
+        android:layout_below="@+id/product_name"
+        android:layout_marginTop="15dp"
+        android:text="MRP: "
+        android:textSize="14dp" 
+        android:textColor="#757575"/>
+
+    <TextView
+        android:id="@+id/product_mrpvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/product_mrp"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/product_mrp"
+        android:text="Rs.20000"
+        android:textSize="14dp" 
+        android:textColor="#757575"/>
+
+    <TextView
+        android:id="@+id/product_bb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/product_name"
+        android:layout_below="@+id/product_mrp"
+        android:layout_marginTop="5dp"
+        android:text="BB:  "
+        android:textSize="14dp" 
+        android:textColor="#757575"/>
+
+    <TextView
+        android:id="@+id/product_bbvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/product_mrpvalue"
+        android:layout_below="@+id/product_mrpvalue"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:text="Rs.15000"
+        android:textSize="14dp" 
+        android:textColor="#757575"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/product_savings"
+        android:layout_below="@+id/product_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/product_mrpvalue"
+        android:background="#E6E6E6" />
+	
+    <TextView
+        android:id="@+id/qty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/view1"
+        android:layout_below="@+id/product_name"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Qty"
+        android:textSize="14dp" 
+        android:textColor="#757575"/>
+    
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/qty_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/view1"/>
+    
+    <View
+        android:id="@+id/view2"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/product_savings"
+        android:layout_below="@+id/product_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/spinner1"
+        android:background="#E6E6E6" />
+    
+    
+    <TextView
+        android:id="@+id/product_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/view2"
+        android:text="Rs 5000"
+        android:textColor="#191919"
+        android:textSize="20dp" />
+	
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignRight="@+id/product_savingsvalue"
+        android:layout_below="@+id/product_value"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/view2"
+        android:background="#E6E6E6" />
+    
+    <TextView
+        android:id="@+id/product_savings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/view2"
+        android:text="Savings: "
+        android:textColor="#5E5E5E"
+        android:textSize="14dp" />
+	
+    <TextView
+        android:id="@+id/product_savingsvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view3"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/product_savings"
+        android:text="Rs 12000 "
+        android:textColor="#5E5E5E"
+        android:textSize="14dp" />
+   	    
+<View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="5dp"
+        android:background="#E6E6E6" />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.qian.androidactionbar.MainActivity">
+
+    <item android:id="@+id/action_scan"
+          android:icon="@drawable/scan"
+          app:showAsAction="ifRoom"
+          android:title="Scan"/>
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/user"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom"/>
+
+</menu>

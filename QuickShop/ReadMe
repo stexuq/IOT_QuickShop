@@ -1,0 +1,29 @@
+ReadMe of App Quick Shop 
+
+(Created by Qian Xu 05/06/2016)
+
+The Quick Shop Android App is built entirely with Android Studio 2.1 on Mac OS X 10.11.5. 
+
+All deployment test is done with real Android devices (Nexus 5 with Android 6.0.1 API 23 and Meizu MX4 Pro with Android 5.1.1 API 22).
+
+To compile and run the project, simply unzip the file and open it in Android Studio. Then click <Run> with your own emulator or device.
+
+One important thing to notice is that to use Google Maps API, each developer should apply for their own key pair. The key embedded in the code is strictly bind to the MAC address of Qian (creator of the project). To obtain the Google API key, simply follow the instruction in the following webpage:
+
+https://developers.google.com/maps/documentation/android-api/signup#android_api
+
+Please make sure that the enabled APIs include Google Map Android API.
+
+After getting a new key, replace the one in res/values/google_maps_api.xml.
+
+The new code should look like the following:
+	
+	 <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        YOUR_KEY
+    </string>
+
+Third party libraries are included in build.gradle file so there is no need to include any extra library manually.
+
+Please email Qian at qx@andrew.cmu.edu for further details if needed.
+
+

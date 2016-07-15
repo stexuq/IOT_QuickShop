@@ -1,0 +1,21 @@
+CREATE TABLE `product_details` (
+  `id` varchar(10) NOT NULL,
+  `product_code` varchar(15) NOT NULL,
+  `product_name` varchar(40) NOT NULL,
+  `product_barcode` varchar(15) NOT NULL,
+  `product_grammage` varchar(15) NOT NULL,
+  `product_catcode` varchar(10) NOT NULL,
+  `product_catname` varchar(30) NOT NULL,
+  `product_catsubcode` varchar(10) NOT NULL,
+  `product_subcodename` varchar(30) NOT NULL,
+  `product_mrp` varchar(10) NOT NULL,
+  `product_bbprice` varchar(10) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `product_details` VALUES('1', '10012010', 'Kell', '890123456789', '120 gm', '40', 'Packed Food and Condiments', '4001', 'Breakfast & Cereals', '120', '115');
+INSERT INTO `product_details` VALUES('2', '10012011', 'Kello', '890123456788', '145 gm', '40', 'Packed Food and Condiments', '4001', 'Breakfast & Cereals', '135', '130');
+INSERT INTO `product_details` VALUES('3', '10012012', 'Kellogg', '890123456787', '150 gm', '40', 'Packed Food and Condiments', '4001', 'Breakfast & Cereals', '145', '142');
+INSERT INTO `product_details` VALUES('4', '10012013', 'Kissan Maggi Hot and Sweet Sauce', '890123456786', '145 gm', '40', 'Packed Food and Condiments', '4002', 'Ketchup & Sauce', '85', '84');
+INSERT INTO `product_details` VALUES('5', '10012014', 'Horlicks', '8901571001354', '150 gm', '30', 'Beverages', '3003', 'Milk Mixes', '178', '175');

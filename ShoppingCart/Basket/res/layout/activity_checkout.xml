@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E6E6E6" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="#FFFFFF" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:layout_marginTop="10dp"
+        android:background="#BABABA"/>
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view2"
+        android:layout_alignLeft="@+id/view2"
+        android:layout_marginLeft="20dp"
+        android:text="Address" 
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view2"
+        android:layout_alignRight="@+id/view2"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="5dp"
+        android:hint="Name" 
+        android:textSize="20dp"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/address1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="5dp"
+        android:hint="Address Line 1" 
+        android:paddingLeft="10dp"
+        android:textSize="20dp"/>
+    
+	<EditText
+        android:id="@+id/address2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_below="@+id/address1"
+        android:layout_marginTop="5dp"
+        android:hint="Address Line 2" 
+        android:paddingLeft="10dp"
+        android:textSize="20dp"/>
+	
+	<EditText
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_below="@+id/address2"
+        android:layout_marginTop="5dp"
+        android:hint="City" 
+        android:paddingLeft="10dp"
+        android:textSize="20dp"/>
+	
+	<EditText
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_below="@+id/city"
+        android:layout_marginTop="5dp"
+        android:hint="State" 
+        android:paddingLeft="10dp"
+        android:textSize="20dp"/>
+	
+	<EditText
+        android:id="@+id/pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_below="@+id/state"
+        android:layout_marginTop="5dp"
+        android:hint="Pin Code" 
+        android:paddingLeft="10dp"
+        android:textSize="20dp"/>
+	
+	<EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_below="@+id/pin"
+        android:layout_marginTop="5dp"
+        android:hint="Phone" 
+        android:paddingLeft="10dp"
+        android:textSize="20dp"/>
+	
+	<View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/phone"
+        android:background="#BABABA"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/header1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view3"
+        android:layout_alignLeft="@+id/header"
+        android:text="Payment Information"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

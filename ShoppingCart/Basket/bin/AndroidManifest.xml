@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zing.basket"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+	
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.zing.basket.StartScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.zing.basket.CityScreen"
+            android:label="@string/city_screen"
+             android:screenOrientation="portrait"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name="com.zing.basket.HomeScreen"
+            android:label="@string/home"
+             android:screenOrientation="portrait"
+            android:launchMode="singleTask" >
+        </activity>
+        
+    	<activity
+            android:name="com.zing.basket.Barcode"
+            android:label="@string/barcode"
+            android:theme="@android:style/Theme.Dialog"
+             android:screenOrientation="portrait"
+            android:launchMode="singleTop" >
+        </activity>
+        
+    	<activity
+            android:name="com.zing.basket.Checkout"
+            android:label="@string/checkout"
+             android:screenOrientation="portrait"
+            android:launchMode="singleTask" >
+        </activity>
+		
+    	<activity
+            android:name="com.zing.basket.CatWiseSearchResults"
+            android:label="@string/search"
+             android:screenOrientation="portrait"
+            android:launchMode="singleTask" >
+        </activity>
+    	
+    	        
+    	        
+    </application>
+    
+
+</manifest>
